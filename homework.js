@@ -35,6 +35,6 @@ const testArray = [ true, false, false, true, false, false, false, true, true, t
 
 function returnNumTrueValues(){
     const trueValues = toJoin(0)
-    console.log('This is a', totalTrueValues)
+    console.log('This is a', allTrueValues)
     console.log('There are a total of', NumTrueValues)
 }
