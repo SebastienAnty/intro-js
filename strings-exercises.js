@@ -8,9 +8,9 @@
 
 // console.log(str1.split (' '))
 
-function findFizzBuzz(num) {
+function fizzBuzz(num) {
   for (let i = 1; i <= num; i++) {
-     if(i % 3 === 0 && i % 5 === 0){
+    if (i % 3 === 0 && i % 5 === 0) {
       console.log("fizzBuzz");
     } else if (i % 3 === 0) {
       console.log("fizz");
@@ -21,5 +21,6 @@ function findFizzBuzz(num) {
     }
   }
 }
-const n = 25;
-fizzBuzz("n");
+
+const n = 50;
+fizzBuzz(n);
