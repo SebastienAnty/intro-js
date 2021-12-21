@@ -20,7 +20,6 @@ const amount = students.length;
 
 console.log(amount);
 
-// this is how we create a function 
 function whatever() {
   if (amount < 12) {
     console.log("not enough items");
@@ -29,12 +28,12 @@ function whatever() {
   }
 }
 
-whatever() // this is how we call a function 
+whatever();
 
-function addToArray(newStudent){
-    students.push(newStudent)
+function addToArray(newStudent) {
+  students.push(newStudent);
 
-    console.log(students)
+  console.log(students);
 }
 
-addToArray('Emily')
+addToArray("Emily");

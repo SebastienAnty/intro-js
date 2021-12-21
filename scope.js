@@ -1,16 +1,15 @@
-let globalVar= "global variable" // available everywhere
+let globalVar = "global variable";
 
-
-function badFunction(){
-    console.log("I am bad...")
-    console.log(globalVar) //global variable
-    globalVar = "Oops, I broke it"
-    console.log(globalVar) // Oops, I broke it
-    const functionVar = "function variable"
-    console.log(functionVar)
+function badFunction() {
+  console.log("I am bad...");
+  console.log(globalVar);
+  globalVar = "Oops, I broke it";
+  console.log(globalVar);
+  const functionVar = "function variable";
+  console.log(functionVar);
 }
 
-console.log(globalVar) //global variable
+console.log(globalVar);
 
-badFunction()
-console.log(globalVar) //Oops, I broke it
+badFunction();
+console.log(globalVar);
