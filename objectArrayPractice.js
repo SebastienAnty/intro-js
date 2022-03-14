@@ -7,7 +7,6 @@ let student = {
     mom: "Genevieve",
     s1: "Neri",
     s2: "Aurore & Abi",
-    gf: "Brithney",
     pets: ["🐶", "🐱"],
   },
   education: {

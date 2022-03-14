@@ -74,3 +74,72 @@ for (let i = 10; i >= 0; i--) {
 
 let str = "WHAT a TIME to BE ALIVE!";
 console.log(str.toUpperCase());
+
+// Interview #2 Rueben and Emil
+
+// Given a target, and an array of objects where each object contains an ***info*** property such as { info: 5 }. Modify the array so that the value of ***info*** is replaced with "-" when info is lesser than the target, "+" when info is greater, and "=" otherwise.
+
+array = [
+  { info: 5 },
+  { info: 10 },
+  { info: 15 },
+  { info: 20 },
+  { info: 25 },
+  { info: 30 },
+  { info: 35 },
+  { info: 40 },
+  { info: 45 },
+  { info: 50 },
+];
+
+// target = 10
+
+result = array.map(function (item) {
+  if (item.info < target) {
+    item.info = "-";
+  } else if (item.info > target) {
+    item.info = "+";
+  } else {
+    item.info = "=";
+  }
+  return item;
+});
+
+// console.log(result)
+
+for (let i = 0; i < array.length; i++) {
+  if (array[i].info < target) {
+    array[i].info = "-";
+  } else if (array[i].info > target) {
+    array[i].info = "+";
+  } else {
+    array[i].info = "=";
+  }
+}
+
+console.log(array);
+
+// get you get me the sum of the array
+
+array = [
+  { info: 5 },
+  { info: 10 },
+  { info: 15 },
+  { info: 20 },
+  { info: 25 },
+  { info: 30 },
+  { info: 35 },
+  { info: 40 },
+  { info: 45 },
+  { info: 50 },
+];
+
+function sumOfArray(array) {
+  let sum = 0;
+  for (let i = 0; i < array.length; i++) {
+    sum += array[i].info;
+  }
+  return sum;
+}
+
+console.log(sumOfArray(array));
